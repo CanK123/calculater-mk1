@@ -7,33 +7,34 @@
 </head>
 <body>
 
-    <script src="script.js"></script>
     <div class="container">
         <div id="topBar" class="top">
+            <p id="display">0</p>
         </div>
         <div class="bottom">
-            <button id="clearButton" class="set1">C</button>
-            <button id="plusMinusButton" class="set1"><img src="./icons/plusMinus.png" alt="Change your sign"></button>
-            <button id="percentButton" class="set1">%</button>
+            <button id="clearButton" onclick="clearClick()" class="set1">C</button>
+            <button id="plusMinusButton" onclick="plusMinusClick()" class="set1"><img src="./icons/plusMinus.png" alt="Change your sign"></button>
+            <button id="percentButton" onclick="percentClick()" class="set1">%</button>
             <button id="divideButton" class="set2">÷</button>
-            <button id="sevenButton" class="set3">7</button>
-            <button id="eightButton" class="set3">8</button>
-            <button id="nineButton" class="set3">9</button>
+            <button id="sevenButton" onclick="set3Click(7)" class="set3">7</button>
+            <button id="eightButton" onclick="set3Click(8)" class="set3">8</button>
+            <button id="nineButton" onclick="set3Click(9)" class="set3">9</button>
             <button id="multiplyButton" class="set2">x</button>
-            <button id="fourButton" class="set3">4</button>
-            <button id="fiveButton" class="set3">5</button>
-            <button id="sixButton" class="set3">6</button>
+            <button id="fourButton" onclick="set3Click(4)" class="set3">4</button>
+            <button id="fiveButton" onclick="set3Click(5)" class="set3">5</button>
+            <button id="sixButton" onclick="set3Click(6)" class="set3">6</button>
             <button id="subtractButton" class="set2">-</button>
-            <button id="oneButton" class="set3">1</button>
-            <button id="twoButton" class="set3">2</button>
-            <button id="threeButton" class="set3">3</button>
+            <button id="oneButton" onclick="set3Click(1)" class="set3">1</button>
+            <button id="twoButton" onclick="set3Click(2)" class="set3">2</button>
+            <button id="threeButton" onclick="set3Click(3)" class="set3">3</button>
             <button id="addButton" class="set2">+</button>
-            <button id="zeroButton" class="set3">0</button>
-            <button id="pointButton" class="set3">,</button>
+            <button id="zeroButton" onclick="set3Click(0)" class="set3">0</button>
+            <button id="pointButton" onclick="set3Click(',')" class="set3">,</button>
             <button id="equalButton" class="set2">=</button>
             
         </div>
     </div>
-
+    <script src="script.js"></script>
+    
 </body>
 </html>
